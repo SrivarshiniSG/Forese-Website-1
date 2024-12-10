@@ -63,6 +63,10 @@
   
   
   @media (max-width: 768px) {
+    .hackathon-heading{
+      padding-top: 10px;
+      padding-bottom: 80px;
+    }
     .hackathon-content-box {
       max-width: 90%; 
     }
