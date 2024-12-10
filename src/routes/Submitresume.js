@@ -14,7 +14,7 @@ const Submitresume = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    window.location.href = 'https://docs.google.com/document/d/1RNhfcDbDVG0GBzzGtS1OG3DamEf4er43RLHkIBN5cA8/edit?usp=sharing';
+    window.location.href = 'https://forms.gle/dYcwjd67mhYsARfH8';
   };
 
   return (

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Col } from "react-bootstrap";
 import { FaLinkedin } from 'react-icons/fa';
+import LazyImage from '../components/LazyImage';
 
 export const TeamCard = ({ name, oneliner, position, imgUrl, ln }) => {
   return (
     <Col xs={12} sm={6} md={4}>
       <div className='team-imgbx'>
-        <img src={imgUrl} alt={name} className='team-img' />
+        <LazyImage src={imgUrl} alt={name} className='team-img' />
         <div className='team-info'>
           <h4>{name}</h4>
           <h5>{position}</h5>

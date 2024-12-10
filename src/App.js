@@ -63,7 +63,7 @@ import Aptitude from "./routes/Aptitude";
 import GroupDiscussion from "./routes/GroupDiscussion";
 // import Seminar from "./routes/Seminar";
 import Seminar from "./routes/Seminar";
-
+import Hackathon from "./routes/Hackathon";
 import wwdcard from "./routes/wwdcard";
 
 
@@ -84,6 +84,7 @@ function App() {
           <Route path="/team" element = {<Team />} />
           <Route path="/events" element = {<Events />} />
           <Route path="/codersforum" element = {<CodersForum />} />
+          <Route path="/hackathon" element = {<Hackathon />} />
           {/* <Route path="/mockplacements" element={<MockPlacements />}/> */}
           <Route path="/mockplacement" element = {<MockPlacement />} />
           <Route path="/fored" element = {<Fored />} />

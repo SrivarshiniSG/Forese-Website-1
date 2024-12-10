@@ -4,19 +4,23 @@ import './MockPlacementStyles.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ABC from "../assets/abc.JPG";
+import APT from "../assets/APT.jpg";
+import GD from "../assets/GD.jpg";
+import LazyImage from '../components/LazyImage';
+
 
 const MockPlacement = () => {
   const cards = [
     {
       id: 1,
       title: 'Aptitude Test',
-      image: ABC,
+      image: APT,
       link: '/aptitude',
     },
     {
       id: 2,
       title: 'Group Discussion',
-      image: ABC,
+      image: GD,
       link: '/groupdiscussion',
     },
     {
@@ -35,7 +39,7 @@ const MockPlacement = () => {
       <div className="mp-card-container">
         {cards.map(card => (
           <div key={card.id} className="mp-card">
-            <img src={card.image} alt={card.title} />
+            <LazyImage src={card.image} alt={card.title} />
             <h2>{card.title}</h2>
             <Link to={card.link}>
               <button>Read More</button>

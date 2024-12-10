@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import IntroImg1 from "../assets/IMG_1289.JPG";
+import Apt1 from "../assets/apt1.jpg"
+import Apt2 from "../assets/apt2.jpg"
+import Apt3 from "../assets/apt3.jpg"
 import './AptitudeStyles.css';
 import { useEffect } from 'react';
 
@@ -50,9 +53,9 @@ const Aptitude = () => {
         </div>
 
         <div className='image-container1'>
-          <img src={IntroImg1} alt="IntroImg1" />
-          <img src={IntroImg1} alt="IntroImg1" />
-          <img src={IntroImg1} alt="IntroImg1" />
+          <img src={Apt1} alt="Apt1" />
+          <img src={Apt2} alt="Apt2" />
+          <img src={Apt3} alt="Apt3" />
         </div>
       </div>
       <Footer />

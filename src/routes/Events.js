@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
 import './EventsStyles.css';
 import { useEffect } from 'react';
+import LazyImage from '../components/LazyImage';
 
 const Events = () => {
 
@@ -48,9 +49,9 @@ const Events = () => {
             {data.map((d) => (
               <div key={d.name} className="bg-custom-blue2 h-[480px] text-black rounded-xl">
                 <div className="h-56 rounded-t-xl bg-custom-blue1 flex justify-center items-center">
-                  <img src={d.img} alt="" className="h-44 w-120 rounded-xl" />
+                  <LazyImage src={d.img} alt="" className="h-44 w-120 rounded-xl" />
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                <div className="flex flex-col justify-center items-center gap-3 p-4">
                   <p className="text-xl font-semibold">{d.name}</p>
                   <p>{d.content}</p>
                   <Link to={d.linkid}>
@@ -73,19 +74,19 @@ const Events = () => {
 const data = [
   {
     name: 'MOCK PLACEMENTS',
-    img: '/EventsImg/intro-bg.JPG',
+    img: '/EventsImg/mp2.jpg',
     content: 'Content for Event 1',
     linkid: '/mockplacement',
   },
   {
     name: 'FORED',
-    img: '/EventsImg/intro-bg.JPG',
+    img: '/EventsImg/fored1.jpg',
     content: 'Content for Event 2',
     linkid: '/fored',
   },
   {
     name: 'SEMINAR',
-    img: '/EventsImg/intro-bg.JPG',
+    img: '/EventsImg/seminar.jpg',
     content: 'Content for Event 3',
     linkid: '/seminar',
   },

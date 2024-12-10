@@ -4,6 +4,9 @@ import Footer from '../components/Footer';
 import IntroImg1 from "../assets/IMG_1289.JPG";
 import './GroupDiscussionStyles.css';
 import { useEffect } from 'react';
+import GD1 from "../assets/gd1.jpg"
+import GD2 from "../assets/gd2.jpg"
+import GD3 from "../assets/gd3.jpg"
 
 const GroupDiscussion = () => {
 
@@ -26,7 +29,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Participate in the Discussion :</h4>
+                <h4>Participate in the Discussion</h4>
               </div>
               <div className='card-back'>
                 <p>Take the initiative to contribute and share your views. Volunteer and speak confidently, and you will have the opportunity to take the GD in a direction that suits you.</p>
@@ -37,7 +40,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Communicate effectively : </h4>
+                <h4>Communicate effectively</h4>
               </div>
               <div className='card-back'>
                 <p>Clear communication is essential during group discussions. Present your thoughts boldly, and make sure your arguments are compelling. Improve your vocal clarity by practicing speech exercises. After your initial contribution, stay active and rejoin the discussion  to add meaningful input.</p>
@@ -48,7 +51,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Listen actively :</h4>
+                <h4>Listen actively</h4>
               </div>
               <div className='card-back'>
                 <p>Listen carefully to what others are saying during the discussion. Responding thoughtfully conveys respect for their points of view, as well as a genuine interest in the debate and a commitment to understanding other perspectives.</p>
@@ -59,7 +62,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Encourage teamwork :</h4>
+                <h4>Encourage teamwork</h4>
               </div>
               <div className='card-back'>
                 <p>Create a collaborative environment by aggressively encouraging quieter participants to offer their ideas. Support their efforts to build an inclusive environment that recognises everyone's contributions and promotes open discussion among all members.</p>
@@ -70,7 +73,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Think creatively :</h4>
+                <h4>Think creatively</h4>
               </div>
               <div className='card-back'>
                 <p>Present new and creative thoughts that demonstrate your capacity to think outside the box. Creative solutions can help you stand out from others and demonstrate your problem-solving ability.</p>
@@ -81,7 +84,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Maintain positive body language :</h4>
+                <h4>Maintain positive body language</h4>
               </div>
               <div className='card-back'>
                 <p>Ensure  your body language is relaxed and confident throughout the conversation. Maintaining eye contact, good posture, and positive gestures are critical for communicating professionalism and establishing connection with people.</p>
@@ -92,7 +95,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Stay Composed :</h4>
+                <h4>Stay Composed</h4>
               </div>
               <div className='card-back'>
                 <p>Maintain composure in the face of disagreements or interruptions during the talk. Patience and emotional control are essential for having a fair and balanced conversation that promotes meaningful dialogue.</p>
@@ -103,7 +106,7 @@ const GroupDiscussion = () => {
           <div className='card2'>
             <div className='card-inner'>
               <div className='card-front'>
-                <h4>Stay assertive, not aggressive :</h4>
+                <h4>Stay assertive, not aggressive</h4>
               </div>
               <div className='card-back'>
                 <p>In group discussions, communicate your thoughts confidently while avoiding aggression. Present your opinions calmly and respectfully, as aggressiveness might result in negative perceptions. Furthermore, don't be afraid to contribute numerous times; re-enter the discussion with powerful comments to support your point of view and indicate your involvement.</p>
@@ -113,9 +116,9 @@ const GroupDiscussion = () => {
         </div>
 
         <div className='image-container2'>
-          <img src={IntroImg1} alt="IntroImg1" />
-          <img src={IntroImg1} alt="IntroImg1" />
-          <img src={IntroImg1} alt="IntroImg1" />
+          <img src={GD1} alt="GD1" />
+          <img src={GD2} alt="GD2" />
+          <img src={GD3} alt="GD3" />
         </div>
       </div>
       <Footer />

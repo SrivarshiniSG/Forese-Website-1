@@ -1,0 +1,76 @@
+/* Center the heading above the content box */
+.hackathon-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2px; /* Add some space between the heading and the content */
+    padding-top: 100px;
+  }
+  
+  .hackathon-heading {
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #333; /* You can change the color to match your design */
+    text-align: center;
+  }
+  
+  .hackathon-creative-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 128vh;
+    padding-top: 2px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    /* margin-top: 200px; */
+    width: 100%;
+    
+    /* overflow-x: auto;  */
+  }
+  
+  .hackathon-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #4f6cb0; 
+    text-align: center;
+    width: 100%; 
+    max-width: 1000px; 
+  }
+  
+  .hackathon-creative-image {
+    /* width: 100%; */
+    width: 1700px;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .hackathon-text-content h1 {
+    color: #fff; 
+    margin-bottom: 10px;
+  }
+  
+  .hackathon-text-content p {
+    color: #fff; 
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hackathon-content-box {
+      max-width: 90%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hackathon-content-box {
+      max-width: 100%; 
+    }
+  }
+  

@@ -36,7 +36,7 @@ const FrontPage = () => {
         {/* <img className="intro-img" src={IntroImg1} alt="IntroImg" /> */}
         <LazyLoadImage
           className="intro-img"
-          src={IntroImg1}
+          src={IntroImg2}
           alt="IntroImg"
           effect="blur"
         />

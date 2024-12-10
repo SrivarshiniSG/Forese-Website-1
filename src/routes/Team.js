@@ -28,6 +28,18 @@ const Team = () => {
     });
   }, []);
 
+  // Function to check if we need to center the last row (for 1 or 2 items)
+  const getCenteredClass = (array) => {
+    return array.length <= 2 ? 'center-row' : '';
+  };
+
+  // For Senior Members, we want to split into two rows:
+  const seniorRows = (teams) => {
+    const firstRow = teams.slice(0, 22);
+    const secondRow = teams.slice(22);
+    return [firstRow, secondRow];
+  };
+
   return (
     <div>
       <Navbar />
@@ -51,26 +63,26 @@ const Team = () => {
                 </Nav>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
+                    {/* Core Members: Display as normal */}
                     <Row className="justify-content-center">
-                      {teams1.slice(0, 8).map((team1, index1) => (
+                      {teams1.map((team1, index1) => (
                         <TeamCard key={index1} {...team1} />
-                      ))}
-                    </Row>
-                    <Row className="justify-content-center">
-                      {teams1.slice(8).map((team1, index1) => (
-                        <TeamCard key={index1 + 8} {...team1} />
                       ))}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <Row>
-                      {teams2.map((team2, index2) => (
-                        <TeamCard key={index2} {...team2} />
-                      ))}
-                    </Row>
+                    {/* Senior Members */}
+                    {seniorRows(teams2).map((row, index) => (
+                      <Row key={index} className={`justify-content-center ${getCenteredClass(row)}`}>
+                        {row.map((team2, idx) => (
+                          <TeamCard key={idx} {...team2} />
+                        ))}
+                      </Row>
+                    ))}
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
-                    <Row>
+                    {/* Members: Display as normal */}
+                    <Row className="justify-content-center">
                       {teams3.map((team3, index3) => (
                         <TeamCard key={index3} {...team3} />
                       ))}
@@ -88,6 +100,101 @@ const Team = () => {
 };
 
 export default Team;
+
+
+
+
+
+// import React, { useEffect, useState } from 'react';
+// import Navbar from "../components/Navbar";
+// import Footer from '../components/Footer';
+// import Papa from 'papaparse';
+// import { TeamCard } from "./TeamCard";
+// import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
+// import './TeamStyles.css';
+
+// const Team = () => {
+
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, []);
+
+//   const [teams1, setTeams1] = useState([]);
+//   const [teams2, setTeams2] = useState([]);
+//   const [teams3, setTeams3] = useState([]);
+
+//   useEffect(() => {
+//     Papa.parse('/list.csv', {
+//       download: true,
+//       header: true,
+//       complete: (results) => {
+//         setTeams1(results.data.filter(item => item.type === 'core'));
+//         setTeams2(results.data.filter(item => item.type === 'senior'));
+//         setTeams3(results.data.filter(item => item.type === 'member'));
+//       }
+//     });
+//   }, []);
+
+//   return (
+//     <div>
+//       <Navbar />
+//       <section className='team' id='teams'>
+//         <Container>
+//           <Row>
+//             <Col>
+//               <h2>TEAM</h2>
+//               <p>FORESE Team</p>
+//               <Tab.Container id="teams-tabs" defaultActiveKey="first">
+//                 <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
+//                   <Nav.Item>
+//                     <Nav.Link eventKey="first">Core Members</Nav.Link>
+//                   </Nav.Item>
+//                   <Nav.Item>
+//                     <Nav.Link eventKey="second">Senior Members</Nav.Link>
+//                   </Nav.Item>
+//                   <Nav.Item>
+//                     <Nav.Link eventKey="third">Members</Nav.Link>
+//                   </Nav.Item>
+//                 </Nav>
+//                 <Tab.Content>
+//                   <Tab.Pane eventKey="first">
+//                     <Row className="justify-content-center">
+//                       {teams1.slice(0, 8).map((team1, index1) => (
+//                         <TeamCard key={index1} {...team1} />
+//                       ))}
+//                     </Row>
+//                     <Row className="justify-content-center">
+//                       {teams1.slice(8).map((team1, index1) => (
+//                         <TeamCard key={index1 + 8} {...team1} />
+//                       ))}
+//                     </Row>
+//                   </Tab.Pane>
+//                   <Tab.Pane eventKey="second">
+//                     <Row>
+//                       {teams2.map((team2, index2) => (
+//                         <TeamCard key={index2} {...team2} />
+//                       ))}
+//                     </Row>
+//                   </Tab.Pane>
+//                   <Tab.Pane eventKey="third">
+//                     <Row>
+//                       {teams3.map((team3, index3) => (
+//                         <TeamCard key={index3} {...team3} />
+//                       ))}
+//                     </Row>
+//                   </Tab.Pane>
+//                 </Tab.Content>
+//               </Tab.Container>
+//             </Col>
+//           </Row>
+//         </Container>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Team;
 
 
 

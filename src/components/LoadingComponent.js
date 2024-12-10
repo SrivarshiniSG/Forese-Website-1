@@ -1,27 +1,24 @@
-import React from 'react';
-import './LoadingComponentStyles.css'; 
+import React, { useEffect } from 'react';
+import './LoadingComponentStyles.css';
 
-const LoadingComponent = () => (
-  <div className="creative-loader">
-    <div className="logo-container">
-      <img src="/foresebluelogo.png" alt="Logo" className="logo" />
+const LoadingComponent = () => {
+  useEffect(() => {
+    // Disable scrolling when the loading component is active
+    document.body.style.overflow = 'hidden';
+
+    // Restore scrolling once the component is unmounted
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
+  return (
+    <div className="creative-loader">
+      <div className="logo-container">
+        <img src="/foresebluelogo.png" alt="Logo" className="logo" />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default LoadingComponent;
-
-
-// import React from 'react';
-// import './LoadingComponentStyles.css';
-
-// const LoadingComponent = () => (
-//   <div className="loader-wrapper">
-//     <div className="loader">
-//     <img src="/foresebluelogo.png" alt="Logo" className="loader-logo" />
-//     </div>
-    
-//   </div>
-// );
-
-// export default LoadingComponent;

@@ -175,7 +175,7 @@
 
 .team-txtx h4 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 650;
   letter-spacing: 0.8px;
   line-height: 1.1em;
   margin-bottom: 15px;
@@ -187,7 +187,9 @@
   letter-spacing: 0.8px;
   line-height: 1.1em;
   margin-bottom: 15px;
-  color: rgb(52, 30, 173);
+  /* color: rgb(52, 30, 173); */
+  color: rgb(54, 53, 57);
+
 }
 
 .team-txtx span {
@@ -209,7 +211,7 @@
 @media screen and (max-width: 640px) {
   .team-txtx-a { 
     margin-top: 1rem;
-    margin-left: 13.8rem;
+    margin-left: 8.3rem;
     
   }
 }

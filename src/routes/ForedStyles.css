@@ -1,19 +1,35 @@
-
-.creative-container {
+/* Center the heading above the content box */
+.fored-heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
-  padding-top: 300px;
+  width: 100%;
+  margin-bottom: 2px; /* Add some space between the heading and the content */
+  padding-top: 100px;
+}
+
+.fored-heading {
+  font-size: 36px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #333; /* You can change the color to match your design */
+  text-align: center;
+}
+
+.fored-creative-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135vh;
+  padding-top: 2px;
   padding-bottom: 50px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   /* margin-top: 200px; */
   width: 100%;
   
   /* overflow-x: auto;  */
 }
 
-.content-box {
+.fored-content-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,18 +42,20 @@
   max-width: 1000px; 
 }
 
-.creative-image {
-  width: 100%;
+.fored-creative-image {
+  /* width: 100%; */
+  width: 1700px;
+  height: 500px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
-.text-content h1 {
+.fored-text-content h1 {
   color: #fff; 
   margin-bottom: 10px;
 }
 
-.text-content p {
+.fored-text-content p {
   color: #fff; 
   font-size: 16px;
   line-height: 1.5;
@@ -45,13 +63,13 @@
 
 
 @media (max-width: 768px) {
-  .content-box {
+  .fored-content-box {
     max-width: 90%; 
   }
 }
 
 @media (max-width: 480px) {
-  .content-box {
+  .fored-content-box {
     max-width: 100%; 
   }
 }

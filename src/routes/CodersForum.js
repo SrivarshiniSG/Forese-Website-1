@@ -10,7 +10,7 @@ const CodersForum = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/fored');
+    navigate('/hackathon');
   };
 
   useEffect(() => {
