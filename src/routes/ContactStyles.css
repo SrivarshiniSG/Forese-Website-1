@@ -124,7 +124,31 @@
     }
   
     .contact-item a {
-      font-size: 10px; /* Adjusted font size for smaller screens */
+      font-size: 9px; /* Adjusted font size for smaller screens */
     }
   }
   
+  @media (max-width: 375px) {
+    .contact-box {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .contactleft {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .contact-item {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+    }
+  
+    .contact-item a {
+      font-size: 6px; /* Adjusted font size for smaller screens */
+    }
+  }
