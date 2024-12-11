@@ -62,14 +62,18 @@ const Team = () => {
                   </Nav.Item>
                 </Nav>
                 <Tab.Content>
-                  <Tab.Pane eventKey="first">
-                    {/* Core Members: Display as normal */}
-                    <Row className="justify-content-center">
-                      {teams1.map((team1, index1) => (
-                        <TeamCard key={index1} {...team1} />
-                      ))}
-                    </Row>
-                  </Tab.Pane>
+                <Tab.Pane eventKey="first">
+                     <Row className="justify-content-center">
+                       {teams1.slice(0, 8).map((team1, index1) => (
+                         <TeamCard key={index1} {...team1} />
+                       ))}
+                     </Row>
+                     <Row className="justify-content-center">
+                       {teams1.slice(8).map((team1, index1) => (
+                         <TeamCard key={index1 + 8} {...team1} />
+                       ))}
+                     </Row>
+                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     {/* Senior Members */}
                     {seniorRows(teams2).map((row, index) => (
