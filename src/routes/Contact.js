@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './ContactStyles.css';
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+// import { FaEnvelope, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const Contact = () => {
             <div className="contactleft">
               {/* Email Section */}
               <div className="contact-item">
-                <FaEnvelope className="contact-icon" />
+                {/* <FaEnvelope className="contact-icon" /> */}
                 <div className="contact-info email-info">
                   <h2>Email:</h2>
                   <p>forese.co.in</p>
@@ -28,7 +28,7 @@ const Contact = () => {
 
               {/* LinkedIn Section */}
               <div className="contact-item">
-                <FaLinkedin className="contact-icon" />
+                {/* <FaLinkedin className="contact-icon" style={{ color: '#0077b5' }} /> */}
                 <div className="contact-info">
                   <h2>LinkedIn:</h2>
                   <a
@@ -44,7 +44,7 @@ const Contact = () => {
 
             {/* Location Section */}
             <div className="contact-item location-item">
-              <FaMapMarkerAlt className="contact-icon" />
+              {/* <FaMapMarkerAlt className="contact-icon" /> */}
               <div className="contact-info">
                 <h2>Location:</h2>
                 <div className="map-container">
@@ -71,8 +71,6 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
 
 
 
@@ -370,6 +368,8 @@ export default Contact;
 // export default Contact;
 
 
+
+
 // import React from 'react'
 // import Navbar from "../components/Navbar"
 // import Footer from '../components/Footer'
@@ -409,3 +409,4 @@ export default Contact;
       
       <Footer/>
     </div> */}
+
