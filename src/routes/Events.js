@@ -75,19 +75,16 @@ const data = [
   {
     name: 'MOCK PLACEMENTS',
     img: '/EventsImg/mp2.jpg',
-    content: 'Content for Event 1',
     linkid: '/mockplacement',
   },
   {
     name: 'FORED',
     img: '/EventsImg/fored1.jpg',
-    content: 'Content for Event 2',
     linkid: '/fored',
   },
   {
     name: 'SEMINAR',
     img: '/EventsImg/seminar.jpg',
-    content: 'Content for Event 3',
     linkid: '/seminar',
   },
 ];

@@ -4,8 +4,8 @@ import './MockPlacementStyles.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ABC from "../assets/abc.JPG";
-import APT from "../assets/APT.jpg";
-import GD from "../assets/GD.jpg";
+import APT from "../assets/APTI.jpg";
+import GD from "../assets/GDP1.jpg";
 import LazyImage from '../components/LazyImage';
 
 

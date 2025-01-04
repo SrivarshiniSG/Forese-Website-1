@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import IntroImg1 from "../assets/IMG_1289.JPG";
 import Apt1 from "../assets/apt1.jpg"
-import Apt2 from "../assets/apt2.jpg"
+import Apt2 from "../assets/apti2.JPG"
 import Apt3 from "../assets/apt3.jpg"
 import './AptitudeStyles.css';
 import { useEffect } from 'react';

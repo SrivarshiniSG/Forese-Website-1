@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import CFlogo from '../assets/codersforumlogo.jpg';
+import TeamMember1 from '../assets/member1.jpg';
+import TeamMember2 from '../assets/member2.jpg';
 import './CodersForumStyles.css';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 
 const CodersForum = () => {
   const navigate = useNavigate();
@@ -29,6 +30,19 @@ const CodersForum = () => {
 
         <button className='btn' onClick={handleClick}>Hackathon</button>
 
+        <div className="team-section">
+          <div className="team-member">
+            <img src={TeamMember1} alt="Team Member 1" />
+            <h4>Gokul S</h4>
+            <p>Knowing what it feels to be in pain, is exactly why we try to be kind to others.</p>
+          </div>
+          
+          <div className="team-member">
+            <img src={TeamMember2} alt="Team Member 2" />
+            <h4>Robin Kumar</h4>
+            <p>A dreamer and an optimist with a curious mind finding beauty in small moments.</p>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
